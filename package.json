@@ -1,0 +1,44 @@
+{
+  "name": "serverless-elastic-apm",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=8.0"
+  },
+  "description": "A simple proxy and self configurable elastic_apm agent for AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "standard"
+  },
+  "repository": {
+    "url": "https://github.com/ccverak/serverless-elastic-apm.git",
+    "type": "git"
+  },
+  "author": "Carlos Castellanos Vera <me@carloscastellanosvera.com",
+  "license": "ISC",
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {
+    "elastic-apm-node": "^3.1.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "serverless",
+    "elasticsearch",
+    "kibana",
+    "apm",
+    "elastic_apm"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
