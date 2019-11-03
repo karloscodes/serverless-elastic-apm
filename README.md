@@ -22,7 +22,7 @@ yarn add serverless-elastic-apm
 
 `ES_APM_SERVICE_NAME`: `(required)` The service name
 
-`ES_APM_SECRET_TOKEN`: `(optional)` The APM Server secret token
+`ES_APM_SECRET_TOKEN`: `(required)` The APM Server secret token
 
 `ES_APM_SERVER_URL`: `(required)` The APM Server url
 
