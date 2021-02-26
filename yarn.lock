@@ -1082,10 +1082,10 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-elastic-apm-http-client@^9.3.0:
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/elastic-apm-http-client/-/elastic-apm-http-client-9.3.0.tgz#fcbb3b4f2af209dc304ac496438d381ef19b9b44"
-  integrity sha512-vxySk7S1oPN7uPcjv0+GLs3Y1cmN7WDVTEHBJixEDg+L6DJMysgxIGst+32Nc0ZmeU5NIjV/Ds9b+6S/yXRdIQ==
+elastic-apm-http-client@^9.5.1:
+  version "9.5.1"
+  resolved "https://registry.yarnpkg.com/elastic-apm-http-client/-/elastic-apm-http-client-9.5.1.tgz#0501668f5786f73f54255c33aabc9d65e22d4a3a"
+  integrity sha512-fWttrwIeLGqoljNooifN8kvVyesoTNoB64MK1Iy7YZbi9blTbGulgvtA5CBcaY4/eewJ/7FDuJC70YwAHRSqyw==
   dependencies:
     breadth-filter "^2.0.0"
     container-info "^1.0.1"
@@ -1098,9 +1098,9 @@ elastic-apm-http-client@^9.3.0:
     unicode-byte-truncate "^1.0.0"
 
 elastic-apm-node@^3.1.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/elastic-apm-node/-/elastic-apm-node-3.5.0.tgz#af8b6533d870269a1f48f67d81d4c2ca5a79390e"
-  integrity sha512-s0masF1sJSrUFwydd2Nrk888BRA/YSxUvQFSrO2Pbd69+iqnjC9Yd9yQvAwfaI0HF4ViVqDXqmmZ1l3FqYgb1Q==
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/elastic-apm-node/-/elastic-apm-node-3.12.1.tgz#f0a41ba375979230952b28fbaefff68da60ee3a8"
+  integrity sha512-HUVEECspvN6SpFIRZdLnMTnS1vIi5nLR4/j3KoWvgofjCqXtjKMgMnYiwmvd/NpZjS1IGZR+qpAEOyjqv0hk7Q==
   dependencies:
     after-all-results "^2.0.0"
     async-value-promise "^1.1.1"
@@ -1108,9 +1108,10 @@ elastic-apm-node@^3.1.0:
     console-log-level "^1.4.1"
     cookie "^0.4.0"
     core-util-is "^1.0.2"
-    elastic-apm-http-client "^9.3.0"
+    elastic-apm-http-client "^9.5.1"
     end-of-stream "^1.4.4"
     error-stack-parser "^2.0.6"
+    escape-string-regexp "^4.0.0"
     fast-safe-stringify "^2.0.7"
     http-headers "^3.0.2"
     http-request-to-url "^1.0.0"
@@ -1121,7 +1122,6 @@ elastic-apm-node@^3.1.0:
     object-identity-map "^1.0.2"
     original-url "^1.2.3"
     read-pkg-up "^7.0.1"
-    redact-secrets "^1.0.0"
     relative-microtime "^2.0.0"
     require-ancestors "^1.0.0"
     require-in-the-middle "^5.0.3"
@@ -1129,8 +1129,9 @@ elastic-apm-node@^3.1.0:
     set-cookie-serde "^1.0.0"
     shallow-clone-shim "^2.0.0"
     sql-summary "^1.0.1"
-    stackman "^4.0.0"
+    stackman "^4.0.1"
     traceparent "^1.0.0"
+    traverse "^0.6.6"
     unicode-byte-truncate "^1.0.0"
 
 emoji-regex@^7.0.1:
@@ -1145,10 +1146,10 @@ end-of-stream@^1.1.0, end-of-stream@^1.4.1, end-of-stream@^1.4.4:
   dependencies:
     once "^1.4.0"
 
-error-callsites@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/error-callsites/-/error-callsites-2.0.2.tgz#55c17a9490a85d72158563f13dc078851ca05b1e"
-  integrity sha512-s35ELWAKAY9oPqnnfP1V4AnasWV0r2ihaLlpsCGrykZgcR/YKsMXV3q8Ap4Mmp8U90VxJqxKJE5Io0IkkRhJIg==
+error-callsites@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/error-callsites/-/error-callsites-2.0.3.tgz#c9278de0d7d4b4861150af295bb92891393ff24a"
+  integrity sha512-v036z4IEffZFE5kBkV5/F2MzhLnG0vuDyN+VXpzCf4yWXvX/1WJCI0A+TGTr8HWzBfCw5k8gr9rwAo09V+obTA==
 
 error-ex@^1.2.0, error-ex@^1.3.1:
   version "1.3.2"
@@ -1193,6 +1194,11 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+
+escape-string-regexp@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
+  integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
 escodegen@^1.9.1:
   version "1.12.0"
@@ -2111,11 +2117,6 @@ is-regex@^1.0.4:
   integrity sha1-VRdIm1RwkbCTDglWVM7SXul+lJE=
   dependencies:
     has "^1.0.1"
-
-is-secret@^1.0.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/is-secret/-/is-secret-1.2.1.tgz#04b9ca1880ea763049606cfe6c2a08a93f33abe3"
-  integrity sha512-VtBantcgKL2a64fDeCmD1JlkHToh3v0bVOhyJZ5aGTjxtCgrdNcjaC9GaaRFXi19gA4/pYFpnuyoscIgQCFSMQ==
 
 is-stream@^1.1.0:
   version "1.1.0"
@@ -3691,14 +3692,6 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-redact-secrets@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/redact-secrets/-/redact-secrets-1.0.0.tgz#60f1db56924fe90a203ba8ccb39283cdbb0d907c"
-  integrity sha1-YPHbVpJP6QogO6jMs5KDzbsNkHw=
-  dependencies:
-    is-secret "^1.0.0"
-    traverse "^0.6.6"
-
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/regex-not/-/regex-not-1.0.2.tgz#1f4ece27e00b0b65e0247a6810e6a85d83a5752c"
@@ -4145,15 +4138,15 @@ stackframe@^1.1.1:
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.1.1.tgz#ffef0a3318b1b60c3b58564989aca5660729ec71"
   integrity sha512-0PlYhdKh6AfFxRyK/v+6/k+/mMfyiEBbTM5L94D0ZytQnJ166wuwoTYLHFWGbs2dpA8Rgq763KGWmN1EQEYHRQ==
 
-stackman@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/stackman/-/stackman-4.0.0.tgz#3ccdc8682fee36373ed2492dc3dad546eb44647d"
-  integrity sha512-JHhUxla4KkXVzPRJoBdIolVbXWBv2qIUe/XdsH9/fkXCgsIdFhCny91tqy9Zld66ROj+dZ0E54l/I3vL3y3Uiw==
+stackman@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/stackman/-/stackman-4.0.1.tgz#b5709446f078db9b9dadbb317f296224d9a35b5b"
+  integrity sha512-lntIge3BFEElgvpZT2ld5f4U+mF84fRtJ8vA3ymUVx1euVx43ZMkd09+5RWW4FmvYDFhZwPh1gvtdsdnJyF4Fg==
   dependencies:
     after-all-results "^2.0.0"
     async-cache "^1.1.0"
     debug "^4.1.1"
-    error-callsites "^2.0.2"
+    error-callsites "^2.0.3"
     load-source-map "^1.0.0"
 
 standard-engine@^12.0.0:
